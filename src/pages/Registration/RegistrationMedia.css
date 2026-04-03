@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+    .registr-wrapper {
+        justify-content: center;
+        padding: 40px 20px;
+        height: auto;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+    
+    .reg-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 25px auto 0;
+    }
+    
+    .registr-wrapper>div>h1 {
+        font-size: 32px;
+    }
+    
+    .registr-wrapper>div>p {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 10px;
+    }
+    
+    .reg-form>label>input,
+    .reg-form>label>select {
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .next-button,
+    .prev-button {
+        height: 40px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .reg-form>label>textarea {
+        font-size: 16px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registr-wrapper {
+        padding: 30px 15px;
+    }
+    
+    .registr-wrapper>div>h1 {
+        font-size: 26px;
+    }
+    
+    .registr-wrapper>div>p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .reg-form {
+        row-gap: 18px;
+    }
+    
+    .reg-form>label>input,
+    .reg-form>label>select {
+        height: 38px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+    
+    .next-button,
+    .prev-button {
+        height: 38px;
+        font-size: 14px;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    
+    .reg-form>label>textarea {
+        font-size: 14px;
+        height: 80px;
+        border-radius: 8px;
+    }
+    
+    .reg-form>label>span {
+        font-size: 14px;
+    }
+}

@@ -1,4 +1,5 @@
 import './Registration.css'
+import './RegistrationMedia.css'
 import RegistForm from '../../components/RegistrForm/RegistForm';
 
 function Registration() {
@@ -8,9 +9,7 @@ function Registration() {
                 <h1>РЕГИСТРАЦИЯ</h1>
                 <p>Давайте создадим<br />профиль</p> 
             </div>
-            <RegistForm />
-            
-                     
+            <RegistForm />         
         </div>
     );
 }

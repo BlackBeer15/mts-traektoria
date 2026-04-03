@@ -85,3 +85,18 @@
     width: 100%;
     resize: none;
 }
+
+@media (max-width: 1024px) {
+    .reg-form {
+        width: 50%;
+    }
+    
+    .registr-wrapper>div>h1 {
+        font-size: 38px;
+    }
+    
+    .registr-wrapper>div>p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
