@@ -1,0 +1,87 @@
+.registr-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registr-wrapper>div>h1 {
+    font-family: 'MTSWide-Medium';
+    font-size: 45px;
+    text-align: center;
+}
+
+.registr-wrapper>div>p {
+    margin-top: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: rgba(202, 202, 202, 0)31;
+    font-size: 22px;
+}
+
+.reg-form {
+    width: 30%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.reg-form>label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.reg-form>label>span {
+    font-family: 'MTSWide-Medium';
+}
+
+.reg-form>label>input,
+.reg-form>label>select {
+    border: 1px solid #FF0032;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.next-button {
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    background-color: #FF0032;
+    color: #fff;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev-button {
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.reg-form>label>textarea {
+    border: 1px solid #FF0032;
+    border-radius: 10px;
+    height: 100px;
+    font-size: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+}

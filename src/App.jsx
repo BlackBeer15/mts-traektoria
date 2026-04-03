@@ -1,10 +1,15 @@
-function App() {
+import { Routes, Route} from 'react-router'
+import StartPage from './pages/StartPage/StartPage';
+import Registration from './pages/Registration/Registration';
 
-  return (
-    <>
-      <h1>Opa</h1>
-    </>
-  )
+
+function App() {
+  return(
+    <Routes>
+      <Route path="/" element={<StartPage />} />
+      <Route path="/reg" element={<Registration />} />
+    </Routes>
+  );
 }
 
 export default App

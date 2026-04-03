@@ -1,4 +1,19 @@
+@font-face {
+    font-family: 'MTSWide';
+    src: url('../public/fonts/MTSWide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MTSWide-Medium';
+    src: url('../public/fonts/MTSWide-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'MTSWide', sans-serif;
 }

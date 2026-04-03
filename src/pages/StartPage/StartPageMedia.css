@@ -1,0 +1,158 @@
+@media (max-width: 1366px) {
+    .start-page {
+        padding: 0 100px;
+    }
+    
+    .logo-info>img {
+        width: 300px;
+    }
+    
+    .logo-info>h1 {
+        font-size: 70px;
+    }
+    
+    .logo-info>p {
+        font-size: 35px;
+    }
+    
+    .login-wrapper {
+        width: 380px;
+        padding: 15px 15px;
+    }
+    
+    .login-wrapper>h1 {
+        font-size: 28px;
+    }
+    
+    .login-wrapper>input[type="text"],
+    .login-wrapper>input[type="password"] {
+        font-size: 18px;
+        height: 35px;
+    }
+    
+    .login-wrapper>button,
+    .login-form>button {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .start-page {
+        padding: 0 50px;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 50px;
+        text-align: center;
+    }
+    
+    .logo-info>img {
+        width: 250px;
+    }
+    
+    .logo-info>h1 {
+        font-size: 60px;
+    }
+    
+    .logo-info>p {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .login-wrapper {
+        width: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-info>p {
+        display: none;
+    }
+
+    .login-form {
+        display: none;
+    }
+
+    .mobile-buuttons {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        row-gap: 25px;
+    }
+
+    .mobile-buuttons button:first-child {
+        font-family: 'MTSWide-Medium';
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 5px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .mobile-buuttons button:last-child {
+        background-color: #FF0032;
+        border: none;
+        border-radius: 10px;
+        font-size: 25px;
+        padding: 5px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: #fff;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-page {
+        padding: 20px 15px;
+        row-gap: 30px;
+    }
+    
+    .logo-info>img {
+        width: 140px;
+    }
+    
+    .logo-info>h1 {
+        font-size: 32px;
+    }
+    
+    .mobile-buuttons {
+        width: 90%;
+        row-gap: 20px;
+    }
+    
+    .mobile-buuttons button:first-child,
+    .mobile-buuttons button:last-child {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+}
+
+/* Очень маленькие телефоны (320px - 374px) */
+@media (max-width: 374px) {
+    .start-page {
+        padding: 15px 10px;
+        row-gap: 25px;
+    }
+    
+    .logo-info>img {
+        width: 110px;
+    }
+    
+    .logo-info>h1 {
+        font-size: 26px;
+    }
+    
+    .mobile-buuttons {
+        width: 95%;
+        row-gap: 15px;
+    }
+    
+    .mobile-buuttons button:first-child,
+    .mobile-buuttons button:last-child {
+        font-size: 18px;
+        padding: 6px 0;
+        border-radius: 8px;
+    }
+}
