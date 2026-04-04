@@ -1,0 +1,44 @@
+.card-job {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    min-height: 200px;
+    height: auto; /* автоматическая высота */
+    box-shadow: 0px 0px 3px #adadad;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+}
+
+.card-job:hover {
+    box-shadow: 0px 0px 5px #adadad;
+    transform: translate(-2px, -2px);
+}
+
+.card-job > h1 {
+    color: #FF0032;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    word-break: break-word; /* перенос слов */
+}
+
+.card-job > h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px 0;
+    word-break: break-word;
+}
+
+.card-job > h3, 
+.card-job > h4 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+.card-job > h2:last-child {
+    margin-top: 15px;
+}

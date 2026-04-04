@@ -1,3 +1,4 @@
+import './LoginForm.css'
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -48,10 +49,6 @@ function LoginForm() {
                     <button type="submit">Войти</button>
                 </form>
                 <button onClick={() => navigate('/reg')}>Зарегистрироваться</button>
-            </div>
-            <div className="mobile-buuttons">
-                <button>Войти</button>
-                <button onClick={() => navigate('/reg')}>Создать аккаунт</button>
             </div>
         </>
     );

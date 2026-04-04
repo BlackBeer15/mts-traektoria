@@ -1,0 +1,21 @@
+.login-page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-page>.login-form { 
+    display: flex;
+    width: 100%;
+}
+
+.login-page>.login-form>.login-wrapper {
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    .login-page>.login-form>.login-wrapper {
+        width: 100%;
+    }
+}

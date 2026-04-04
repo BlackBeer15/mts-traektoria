@@ -1,10 +1,13 @@
 import "./Jobs.css"
+import Navigation from "../../components/Navigation/Navigation"
+import LayoutJobs from "../../components/LayoutJobs/LayoutJobs";
 
 function Jobs() {
     return(
-        <>
-            <h1>Da</h1>
-        </>
+        <div className="layout">
+            <Navigation />
+            <LayoutJobs />
+        </div>
     );
 }
 
