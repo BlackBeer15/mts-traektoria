@@ -10,7 +10,7 @@ function Navigation() {
 
     useEffect(() => {
     const token = localStorage.getItem('accessToken');
-    fetch(`http://192.168.23.17:8080/api/v1/auth/userData/?token=${token}`)
+    fetch(`https://api.kapiteam.ru/api/v1/auth/userData/?token=${token}`)
         .then(res => res.json())
         .then(data => {
             setUserName(data.firstName);
@@ -36,7 +36,7 @@ function Navigation() {
                     <img src="../../../public/images/Траектория.svg" alt="Logo" />
                     <span>Моя траектория</span>
                 </Link>
-                <Link to="/"  className="nav-em">
+                <Link to="/assistent"  className="nav-em">
                     <img src="../../../public/images/Ассистент.svg" alt="Logo" />
                     <span>AI Ассистент</span>
                 </Link>

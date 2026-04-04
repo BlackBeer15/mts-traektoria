@@ -6,6 +6,7 @@ import Login from './pages/Login/Login';
 import Trajectory from './pages/Trajectory/Trajectory';
 import ProtectedRoute from './ProtectedRoute';
 import PublicRoute from './PublicRoute';
+import Chat from './pages/Chat/Chat';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/login" element={<PublicRoute element={Login} />} />
       <Route path="/jobs" element={<ProtectedRoute element={Jobs} />} />
       <Route path="/trajectory" element={<ProtectedRoute element={Trajectory} />} />
+      <Route path="/assistent" element={<ProtectedRoute element={Chat} />} />
     </Routes>
   );
 }

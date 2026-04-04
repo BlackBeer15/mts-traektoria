@@ -16,7 +16,7 @@ const PublicRoute = ({ element: Element, ...rest }) => {
 
     const checkAuth = async () => {
       try {
-        const response = await fetch("http://192.168.23.17:8080/api/v1/auth/checkLogin/", {
+        const response = await fetch("https://api.kapiteam.ru/api/v1/auth/checkLogin/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

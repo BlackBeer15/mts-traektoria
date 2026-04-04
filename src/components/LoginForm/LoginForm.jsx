@@ -11,7 +11,7 @@ function LoginForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://192.168.23.17:8080/api/v1/auth/login/", {
+            const response = await fetch("https://api.kapiteam.ru/api/v1/auth/login/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password })

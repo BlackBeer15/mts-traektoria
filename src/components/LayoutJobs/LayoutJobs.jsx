@@ -14,7 +14,7 @@ function LayoutJobs() {
                     return;
                 }
 
-                const response = await fetch(`http://192.168.23.17:8080/api/v1/career/showVacancies/?token=${accessToken}`);
+                const response = await fetch(`https://api.kapiteam.ru/api/v1/career/showVacancies/?token=${accessToken}`);
                 const data = await response.json();
                 setVacancies(data);
             } catch (err) {

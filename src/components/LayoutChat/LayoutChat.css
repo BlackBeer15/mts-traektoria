@@ -1,0 +1,95 @@
+.layout-chat {
+    box-shadow: 0px 0px 5px #adadad;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    height: 96vh;
+    border-radius: 10px;
+}
+
+.chat-window {
+    background-color: #efefef;
+    width: 100%;
+    height: 80%;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 20px 5px;
+    box-sizing: border-box;
+}
+
+.send-message-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.send-message-row>textarea {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #a7a7a7;
+    resize: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.send-message-row>button {
+    width: 18%;
+    background-color: #FF0032;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.chat-window {
+    overflow-y: auto;          /* чтобы можно было прокручивать длинные диалоги */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;                /* отступ между сообщениями */
+    padding: 16px;            /* внутренние отступы, чтобы сообщения не прилипали к краям */
+    box-sizing: border-box;   /* чтобы padding не увеличивал общую ширину/высоту */
+}
+
+/* Контейнер каждого сообщения */
+.message {
+    display: flex;
+    width: 100%;
+}
+
+/* Сообщение пользователя — прижато справа */
+.user-message {
+    justify-content: flex-end;
+}
+
+/* Сообщение ассистента — прижато слева */
+.assistant-message {
+    justify-content: flex-start;
+}
+
+/* Пузырёк сообщения */
+.message-bubble {
+    max-width: 75%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    line-height: 1.45;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+}
+
+/* Стиль пузырька пользователя */
+.user-message .message-bubble {
+    background-color: #FF0032;
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+/* Стиль пузырька ассистента */
+.assistant-message .message-bubble {
+    background-color: #e9ecef;
+    color: #1e2a3a;
+    border-bottom-left-radius: 4px;
+}

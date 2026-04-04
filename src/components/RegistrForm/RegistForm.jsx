@@ -29,12 +29,12 @@ function RegistForm() {
     const [eduLevels, setEduLevels] = useState([]);
 
     useEffect(() => {
-        fetch("http://192.168.23.17:8080/api/v1/common/country/")
+        fetch("https://api.kapiteam.ru/api/v1/common/country/")
             .then(res => res.json())
             .then(data => setCountries(data))
             .catch(err => console.error("Ошибка загрузки стран:", err));
 
-        fetch("http://192.168.23.17:8080/api/v1/common/eduLevel/")
+        fetch("https://api.kapiteam.ru/api/v1/common/eduLevel/")
             .then(res => res.json())
             .then(data => setEduLevels(data))
             .catch(err => console.error("Ошибка загрузки образования:", err));
@@ -46,7 +46,7 @@ function RegistForm() {
             setRegions([]);
             return;
         }
-        fetch(`http://192.168.23.17:8080/api/v1/common/region/${formData.countryId}`)
+        fetch(`https://api.kapiteam.ru/api/v1/common/region/${formData.countryId}`)
             .then(res => res.json())
             .then(data => setRegions(data))
             .catch(err => console.error("Ошибка загрузки регионов:", err));
@@ -61,7 +61,7 @@ function RegistForm() {
             setCities([]);
             return;
         }
-        fetch(`http://192.168.23.17:8080/api/v1/common/city/?CountID=${formData.countryId}&RegID=${formData.regionId}`)
+        fetch(`https://api.kapiteam.ru/api/v1/common/city/?CountID=${formData.countryId}&RegID=${formData.regionId}`)
             .then(res => res.json())
             .then(data => setCities(data))
             .catch(err => console.error("Ошибка загрузки городов:", err));
@@ -108,7 +108,7 @@ function RegistForm() {
 
         setIsSubmitting(true);
         try {
-            const response = await fetch("http://192.168.23.17:8080/api/v1/auth/register/", {
+            const response = await fetch("https://api.kapiteam.ru/api/v1/auth/register/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
