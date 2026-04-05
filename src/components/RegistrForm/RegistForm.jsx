@@ -46,7 +46,7 @@ function RegistForm() {
             setRegions([]);
             return;
         }
-        fetch(`https://api.kapiteam.ru/api/v1/common/region/${formData.countryId}`)
+        fetch(`https://api.kapiteam.ru/api/v1/common/region/?ID=${formData.countryId}`)
             .then(res => res.json())
             .then(data => setRegions(data))
             .catch(err => console.error("Ошибка загрузки регионов:", err));
