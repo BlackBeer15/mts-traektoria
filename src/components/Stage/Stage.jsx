@@ -10,7 +10,7 @@ function Stage({name, description, arrayCourses}) {
                 <h3>Рекомендуемые курсы этапа:</h3>
                 <div className='courses'>
                     {arrayCourses.map((course) => (
-                        <Link to={course.link} target='_blank'>
+                        <Link key={course.name} to={course.link} target='_blank'>
                             <h4>{course.name}</h4>
                         </Link>
                     ))}
