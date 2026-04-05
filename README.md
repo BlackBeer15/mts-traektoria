@@ -3,3 +3,5 @@
 Озакомиться с прототипом  - https://mts.pkgn.ru/
 
 Backend - https://github.com/Diman4ik110/mts-traektoria-backend
+
+Резервная сслыка на видео и дизайн-проект: https://disk.yandex.ru/d/DiFARKZtJubgDg
