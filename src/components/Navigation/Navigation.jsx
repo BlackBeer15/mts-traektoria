@@ -29,7 +29,7 @@ function Navigation() {
                     <img src="../../../public/images/Главная.svg" alt="Logo" />
                     <span>Мои вакансии</span>
                 </Link>
-                <Link to="/jobs" className="nav-em mobile-profile">
+                <Link to="/profile" className="nav-em mobile-profile">
                     <img src="../../../public/images/Профиль.svg" alt="Logo" />
                 </Link>
                 <Link to="/trajectory"  className="nav-em">
