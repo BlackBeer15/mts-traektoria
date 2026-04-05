@@ -91,6 +91,7 @@ function LayoutTrajectory() {
     }
   };
 
+
   const renderTrajectoryContent = () => {
     if (isLoading) {
       return (
@@ -116,6 +117,7 @@ function LayoutTrajectory() {
               key={index}
               name={stage.name}
               description={stage.description}
+              arrayCourses={stage.courses}
             />
           ))}
         </div>

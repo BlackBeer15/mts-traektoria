@@ -11,3 +11,24 @@
     margin-top: 10px;
     font-size: 18px;
 }
+
+.courses-wrapper {
+    width: 100%;
+}
+
+.courses {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    column-gap: 15px;
+    margin-top: 10px;
+}
+
+.courses>a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #FF0032;
+    color: #fff;
+    border-radius: 10px;
+}
