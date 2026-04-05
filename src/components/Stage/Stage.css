@@ -22,6 +22,8 @@
     justify-content: start;
     column-gap: 15px;
     margin-top: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .courses>a {
